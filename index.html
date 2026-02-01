@@ -1,42 +1,189 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Business Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexaPoint Solutions | Business Website Demo</title>
+  <meta name="description" content="NexaPoint Solutions is a modern business demo website showcasing services, about, and contact information." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-  <h1>Bright Business</h1>
-  <p>We help your business grow</p>
-</header>
+  <!-- 1) Header / Hero -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="NexaPoint Solutions home">
+        NexaPoint <span>Solutions</span>
+      </a>
 
-<section>
-  <h2>About Us</h2>
-  <p>
-    Bright Business is a modern company providing high-quality services
-    to help businesses succeed online.
-  </p>
-</section>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
 
-<section>
-  <h2>Our Services</h2>
-  <ul>
-    <li>Website Development</li>
-    <li>Landing Pages</li>
-    <li>Business Solutions</li>
-  </ul>
-</section>
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Modern operations for fast-moving teams.</h1>
+          <p class="tagline">
+            NexaPoint Solutions helps growing businesses streamline workflows, improve customer experiences,
+            and make smarter decisions with practical, secure technology.
+          </p>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: contact@brightbusiness.com</p>
-</section>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-secondary" href="#services">View services</a>
+          </div>
 
-<footer>
-  <p>© 2026 Bright Business</p>
-</footer>
+          <ul class="hero-highlights" aria-label="Key highlights">
+            <li>Strategy-first delivery</li>
+            <li>Security-minded by design</li>
+            <li>Clear timelines & outcomes</li>
+          </ul>
+        </div>
 
+        <div class="hero-card" aria-label="Company snapshot">
+          <h2 class="card-title">Trusted partner for</h2>
+          <ul class="card-list">
+            <li>Startups scaling operations</li>
+            <li>Professional services teams</li>
+            <li>Product-led SaaS businesses</li>
+          </ul>
+          <p class="card-note">
+            Demo project content — ideal for a web developer portfolio.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- 2) About Us -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header">
+          <h2>About Us</h2>
+          <p>
+            We’re a small team focused on building reliable, maintainable solutions that look great and perform well.
+            Our approach blends business insight with clean execution—so your site and systems support real growth.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <article class="panel">
+            <h3>Our approach</h3>
+            <p>
+              We start with goals and constraints, then design a clear plan: scope, timeline, and measurable outcomes.
+              No buzzwords—just practical results.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>How we work</h3>
+            <p>
+              Transparent communication, tidy deliverables, and modern standards. We prioritize accessibility,
+              responsive design, and performance from day one.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>What you get</h3>
+            <p>
+              A professional online presence with clean UI, consistent typography, and a structure that’s easy to expand
+              as your business evolves.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Services (3 services) -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>
+            Clear, focused offerings designed for small and mid-size businesses that want modern design and dependable delivery.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Business Website Design</h3>
+            <p>
+              Professional, responsive websites built with semantic HTML and clean CSS—fast to load, easy to maintain,
+              and consistent across devices.
+            </p>
+            <ul class="service-points">
+              <li>Modern UI and typography</li>
+              <li>Mobile-first layouts</li>
+              <li>Accessibility best practices</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Brand & Content Structure</h3>
+            <p>
+              Tight messaging and well-structured pages that guide visitors to action—without clutter.
+              Ideal for service businesses and product teams.
+            </p>
+            <ul class="service-points">
+              <li>Information architecture</li>
+              <li>Conversion-focused copy layout</li>
+              <li>Consistent visual system</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Performance & Polish</h3>
+            <p>
+              A final quality pass that improves readability, spacing, and layout precision—plus small optimizations for speed.
+            </p>
+            <ul class="service-points">
+              <li>Responsive refinements</li>
+              <li>Design consistency checks</li>
+              <li>Clean, reusable CSS</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Contact (email only) -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>
+            Have a project in mind? Send a quick email and include your goals, timeline, and a link to any reference sites.
+          </p>
+        </header>
+
+        <div class="contact-box" role="region" aria-label="Contact email">
+          <p class="contact-label">Email</p>
+          <a class="contact-email" href="mailto:hello@nexapointsolutions.com">
+            hello@nexapointsolutions.com
+          </a>
+          <p class="contact-note">
+            Typical response time: 1–2 business days.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5) Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span class="year">2026</span> NexaPoint Solutions. Demo website for a developer portfolio.</p>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
