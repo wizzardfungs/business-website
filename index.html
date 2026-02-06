@@ -1,189 +1,245 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NexaPoint Solutions | Business Website Demo</title>
-  <meta name="description" content="NexaPoint Solutions is a modern business demo website showcasing services, about, and contact information." />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fares | Web Developer Portfolio</title>
 
-<body>
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Font (modern + readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 1) Header / Hero -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="NexaPoint Solutions home">
-        NexaPoint <span>Solutions</span>
-      </a>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <body>
+    <!-- Header / Nav -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="logo" href="#top">AD</a>
 
-    <section class="hero" aria-label="Hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Modern operations for fast-moving teams.</h1>
-          <p class="tagline">
-            NexaPoint Solutions helps growing businesses streamline workflows, improve customer experiences,
-            and make smarter decisions with practical, secure technology.
-          </p>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            Menu
+          </button>
 
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="btn btn-primary" href="#contact">Get in touch</a>
-            <a class="btn btn-secondary" href="#services">View services</a>
+          <ul class="nav__list" id="navMenu">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow">Hi, I’m</p>
+          <h1 class="hero__title">Fares Developer</h1>
+          <p class="hero__subtitle">Beginner Web Developer • Learning by building</p>
+
+          <div class="hero__cta">
+            <a class="button button--primary" href="#projects">View Projects</a>
+            <a class="button button--ghost" href="#contact">Contact Me</a>
           </div>
 
-          <ul class="hero-highlights" aria-label="Key highlights">
-            <li>Strategy-first delivery</li>
-            <li>Security-minded by design</li>
-            <li>Clear timelines & outcomes</li>
-          </ul>
+          <div class="hero__meta">
+            <span class="badge">Open to learning</span>
+            <span class="badge">Building daily</span>
+            <span class="badge">Beginner-friendly portfolio</span>
+          </div>
         </div>
+      </section>
 
-        <div class="hero-card" aria-label="Company snapshot">
-          <h2 class="card-title">Trusted partner for</h2>
-          <ul class="card-list">
-            <li>Startups scaling operations</li>
-            <li>Professional services teams</li>
-            <li>Product-led SaaS businesses</li>
-          </ul>
-          <p class="card-note">
-            Demo project content — ideal for a web developer portfolio.
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">
+            I’m a beginner developer who’s motivated to learn web development and build real skills.
+            I’m currently focusing on HTML, CSS, and JavaScript fundamentals—one small project at a
+            time.
           </p>
-        </div>
-      </div>
-    </section>
-  </header>
 
-  <main id="main">
-    <!-- 2) About Us -->
-    <section class="section" id="about">
-      <div class="container">
-        <header class="section-header">
-          <h2>About Us</h2>
-          <p>
-            We’re a small team focused on building reliable, maintainable solutions that look great and perform well.
-            Our approach blends business insight with clean execution—so your site and systems support real growth.
-          </p>
-        </header>
-
-        <div class="about-grid">
-          <article class="panel">
-            <h3>Our approach</h3>
-            <p>
-              We start with goals and constraints, then design a clear plan: scope, timeline, and measurable outcomes.
-              No buzzwords—just practical results.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h3>How we work</h3>
-            <p>
-              Transparent communication, tidy deliverables, and modern standards. We prioritize accessibility,
-              responsive design, and performance from day one.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h3>What you get</h3>
-            <p>
-              A professional online presence with clean UI, consistent typography, and a structure that’s easy to expand
-              as your business evolves.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3) Services (3 services) -->
-    <section class="section section-alt" id="services">
-      <div class="container">
-        <header class="section-header">
-          <h2>Services</h2>
-          <p>
-            Clear, focused offerings designed for small and mid-size businesses that want modern design and dependable delivery.
-          </p>
-        </header>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <h3>Business Website Design</h3>
-            <p>
-              Professional, responsive websites built with semantic HTML and clean CSS—fast to load, easy to maintain,
-              and consistent across devices.
-            </p>
-            <ul class="service-points">
-              <li>Modern UI and typography</li>
-              <li>Mobile-first layouts</li>
-              <li>Accessibility best practices</li>
+          <div class="card">
+            <h3 class="card__title">What I’m working on</h3>
+            <ul class="list">
+              <li>Writing clean, semantic HTML</li>
+              <li>Responsive layouts with modern CSS</li>
+              <li>Basic JavaScript for interactivity</li>
+              <li>Using GitHub to track progress</li>
             </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Brand & Content Structure</h3>
-            <p>
-              Tight messaging and well-structured pages that guide visitors to action—without clutter.
-              Ideal for service businesses and product teams.
-            </p>
-            <ul class="service-points">
-              <li>Information architecture</li>
-              <li>Conversion-focused copy layout</li>
-              <li>Consistent visual system</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Performance & Polish</h3>
-            <p>
-              A final quality pass that improves readability, spacing, and layout precision—plus small optimizations for speed.
-            </p>
-            <ul class="service-points">
-              <li>Responsive refinements</li>
-              <li>Design consistency checks</li>
-              <li>Clean, reusable CSS</li>
-            </ul>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 4) Contact (email only) -->
-    <section class="section" id="contact">
-      <div class="container">
-        <header class="section-header">
-          <h2>Contact</h2>
-          <p>
-            Have a project in mind? Send a quick email and include your goals, timeline, and a link to any reference sites.
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lead">A few tools and topics I’m currently learning and practicing:</p>
+
+          <div class="grid grid--skills">
+            <div class="card">
+              <h3 class="card__title">HTML</h3>
+              <p class="card__text">Semantic structure, forms, accessibility basics.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">CSS</h3>
+              <p class="card__text">Flexbox, Grid, responsive design, clean UI.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">GitHub</h3>
+              <p class="card__text">Repositories, commits, README files, simple workflows.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Python (Basics)</h3>
+              <p class="card__text">Variables, loops, functions, beginner problem-solving.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__lead">
+            These are placeholder projects while I build real ones. I’m focused on learning and
+            improving with each build.
           </p>
-        </header>
 
-        <div class="contact-box" role="region" aria-label="Contact email">
-          <p class="contact-label">Email</p>
-          <a class="contact-email" href="mailto:hello@nexapointsolutions.com">
-            hello@nexapointsolutions.com
-          </a>
-          <p class="contact-note">
-            Typical response time: 1–2 business days.
+          <div class="grid grid--projects">
+            <!-- Project 1 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">Simple Landing Page</h3>
+                <p class="project__tag">HTML • CSS</p>
+              </div>
+              <p class="card__text">
+                A clean landing page layout with a hero section, features, and a call-to-action.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">To-Do List UI</h3>
+                <p class="project__tag">HTML • CSS • JS</p>
+              </div>
+              <p class="card__text">
+                A basic to-do interface (add/remove items) to practice JavaScript and DOM updates.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">Portfolio Template</h3>
+                <p class="project__tag">Responsive Design</p>
+              </div>
+              <p class="card__text">
+                A simple portfolio layout (like this one) to practice typography, spacing, and
+                sections.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+          </div>
+
+          <p class="note">
+            Tip: Replace these with your real projects later. Even small projects count (calculator,
+            quiz app, small landing page, etc.).
           </p>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- 5) Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span class="year">2026</span> NexaPoint Solutions. Demo website for a developer portfolio.</p>
-      <a class="back-to-top" href="#top">Back to top</a>
-    </div>
-  </footer>
-</body>
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__lead">
+            Want to connect or give feedback? Send me a message. (This form is front-end only for now.)
+          </p>
+
+          <div class="grid grid--contact">
+            <form class="card form" id="contactForm">
+              <div class="form__row">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="message">Message</label>
+                <textarea
+                  class="form__input form__textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="button button--primary" type="submit">Send Message</button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="card contact-card">
+              <h3 class="card__title">More ways</h3>
+              <p class="card__text">
+                Add your real links when you’re ready.
+              </p>
+
+              <ul class="list">
+                <li><span class="muted">Email:</span> yourname@email.com</li>
+                <li><span class="muted">GitHub:</span> github.com/yourusername</li>
+                <li><span class="muted">Location:</span> Your City</li>
+              </ul>
+
+              <a class="button button--ghost" href="#top">Back to top</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Fares Developer. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+  </body>
 </html>
